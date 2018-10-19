@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <title>Train Scheduler</title>
+</head>
+
+<body background=https://media.giphy.com/media/bQHusNipMgUw0/giphy.gif> <div class="container">
+    <div class="row">
+        <div class="col">
+            <header class="head">
+                <div>
+                    <h1>Train Scheduler</h1>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card" id=articles-card>
+                <div class="card-header">
+                    Current Train Schedule
+                </div>
+                <table class="table" id="train-table">
+                    <thead>
+                        <tr>
+                            <!-- The scope attribute specifies that this is a header for a column -->
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- append rows here -->
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    Add Train
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name-input">Train Name</label>
+                            <input type="text" class="form-control" id="name-input" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="destination-input">Destination</label>
+                            <input type="text" class="form-control" id="destination-input" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="time-input">First Train Time (HH:mm - military time)</label>
+                            <input type="text" class="form-control" id="time-input" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="frequency-input">Frequency (min)</label>
+                            <input type="text" class="form-control" id="frequency-input" placeholder="">
+                        </div>
+                        <button class="btn btn-dark" id="submit">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+<script src=train.js></script>
+
+</html>

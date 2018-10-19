@@ -1,0 +1,26 @@
+.head {
+   
+    background-color:#313736;  
+    color: white; 
+    text-align: center; 
+    padding: 20px;
+  
+    }
+    .card {
+    margin-top: 40px;
+    border-color: #313736;
+    
+    }
+    .card-header{
+    background-color:#313736; 
+    color:white;
+    }
+h3 {
+    font-size: 18px;
+
+}
+.grid-header {
+    line-height: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
